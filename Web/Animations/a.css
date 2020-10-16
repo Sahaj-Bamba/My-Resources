@@ -1,0 +1,39 @@
+/* https://www.youtube.com/watch?v=HZHHBwzmJLk */
+
+
+/* First way direct transition */
+
+.logo {
+    opacity: 0;
+    transition: opacity 1000ms ease-in-out;    /* now whenever opicity change is triggered it will take this much time */
+}
+
+.logo:hover {
+    opacity: 1;
+}
+
+
+/* Second way via keyframes */
+
+@keyframes myframe {
+    from {
+        transform: rotate(0deg);
+    }
+
+    5% {
+        transform: rotate(200deg);
+    }
+
+    20% {
+        transform: rotate(-100deg);
+    }
+
+    to {
+        transform: rotate(100deg);
+    }
+}
+
+.spinner {
+    animation: myframe 4s ;
+    animation-iteration-count: infinite;
+}
