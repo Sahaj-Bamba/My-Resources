@@ -1,0 +1,32 @@
+/* https://www.youtube.com/watch?v=kpXKwDGtjGE */
+
+/* Style an element based on change to its state */
+
+button:hover, 
+button:focus, 
+button:disabled {
+
+}
+
+li:first-child, 
+li:last-child, 
+li:nth-child(2), 
+li:nth-child(2n),
+li:nth-child(even), 
+li:nth-child(3n-1) {
+
+}
+
+li:not(:hover) {
+
+}
+
+.dropdown:focus-within {
+
+}
+
+/* can be combined like  */
+
+li:nth-child(even):hover {
+    
+}

@@ -1,0 +1,23 @@
+/* https://www.youtube.com/watch?v=NtRmIp4eMjs */
+
+/* global vars can be in each media query element */
+:root {
+    --myvar: blue;
+}
+
+body {
+    background-color: var(--myvar,pink);
+}
+
+/* For hello class value updated */
+.hello {
+    --myvar: red;
+
+}
+
+/* Calculations */
+
+.time {
+    --base : 8;
+    margin: calc(var(--base) + 2px);
+}
